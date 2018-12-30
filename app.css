@@ -1,0 +1,268 @@
+body {
+	background-color: #f3f3f8;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+
+
+/*div class*/
+.patcoLogo {
+	margin: 0px auto 0px auto;
+    width: 1000px;
+}
+
+/*actual patco logo inside div class*/
+img {
+	height: 50px;
+	width: auto;
+}
+
+.redBar {
+	width: 100%;
+	background-color: #d11140;
+	height: 40px;
+}
+
+
+
+.picker {
+	margin: 20px auto 20px auto;
+    width: 1000px;
+    padding: 25px;
+    background-color: white
+}
+
+label {
+	display:inline-block;
+	margin-right: 15px;
+	font-size: 13px;
+	color: gray;
+}
+
+select {
+
+	background-color: #f3f3f8;
+	padding: 7px;
+	/*outline: 0px;*/ /*takes away blue hgighlight when clicked*/
+	display: block;
+	margin-right: 15px;
+	margin-top: 5px;
+
+	width: 180px;
+	font-size: 15px;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	
+}
+
+/*When clicked, turn outline to red*/
+/*#startStationDropdown:focus {
+	 box-shadow: 0 0 0 0.17rem rgba(209, 17, 64, 0.5);
+	 border: 0px;
+}*/
+
+
+input[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	height: 35px;
+	width: 140px;
+	border: 0;
+
+	/* right align */
+    float: right;
+    margin-top: 20px;   
+}
+
+input[type="submit"]:hover {	/*button changes to dark blue when hovered*/
+	background-color: #0050cb;
+}
+
+
+
+#timesDiv {
+	margin: 20px auto 20px auto;
+    padding: 25px;
+    
+    width: 1000px;
+    background-color: #f3f3f8;
+}
+
+table {
+	border-collapse: collapse; /*make bottom borders connect*/
+	margin-left:auto; 
+    margin-right:auto;
+}
+th {
+	/* initially starts out as white but changes to gray on click of submit */
+	color: #f3f3f8;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	padding: 18px;
+	text-align: center;
+}
+#departHeader {
+	text-align: right;
+}
+#arriveHeader {
+	text-align: left;
+}
+td {
+   border-bottom: 1px solid DarkGray;
+   padding: 18px;
+   font-size: 21px;
+}
+
+.startTimes {
+	width: 100px;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 500;
+	text-align: right;
+}
+.arrows {
+	color: gray;
+	width: 20px;
+	text-align: center;
+}
+.endTimes {
+	width: 100px;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 500;
+}
+
+
+a {
+	text-decoration: none;
+}
+.app_store {
+	height: 40px;
+}
+/* footer that changes based on size of times div */
+#footer {
+	color: #333538;
+	font-size: 15px;
+
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	display: none;
+}
+/* footer fixed to bottom of initial page */
+#footer2 {
+	color: #333538;
+	font-size: 15px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+
+
+
+
+@media (max-width: 1055px) {
+
+	.patcoLogo {
+		width: 800px;
+    }
+
+	.picker {
+    	width: 800px;
+    }
+
+    #timesDiv {
+    	width: 800px;
+    }
+
+	select {
+		margin-right: 5px;
+	}
+	
+	input[type="submit"] {
+		/*margin-right: 25px;*/
+		float: none;
+	}
+}
+
+
+
+
+
+@media (max-width: 858px) {
+
+	img {
+		height: 30px;
+		width: auto;
+	}
+
+	.redBar {
+		width: 99%;
+		background-color: #d11140;
+		height: 20px;
+	}
+
+    label {
+		display:block;
+		margin-left: 25px;
+	}
+
+	select {
+		margin-bottom: 15px;
+
+	}
+	/*table {
+		margin-left: 25px;
+	}*/
+
+	input[type="submit"] {
+		width: 180px;
+		margin-left: 25px;
+	}
+
+	.patcoLogo {
+		width: 90%;
+    }
+
+	.picker {
+    	width: 90%;
+    	padding-top: 25px;
+    	padding-bottom: 25px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    }
+
+    #timesDiv {
+    	width: 90%;
+    	padding-top: 25px;
+    	padding-bottom: 25px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    }
+
+
+    th {
+	
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	
+	}
+
+    td {
+	
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+}
